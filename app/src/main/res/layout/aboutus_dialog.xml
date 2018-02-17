@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_imae"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:paddingTop="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TPA Aluminium Work"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flush Glazing Structures: Seamless And Framed. \n \n We do supply And Break Fit And Plaster.\n \n Security Burglar Guards And gates: Burglar Guards And Gates For Windows And Doors. Driveways Gates, Automated Gates"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

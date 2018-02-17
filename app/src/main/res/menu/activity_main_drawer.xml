@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/icons8gallery"
+            android:title="Gallery"/>
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/icons8login"
+            android:title="LogIn"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/icons8about"
+            android:title="About Us"/>
+
+        <item
+            android:id="@+id/nav_contsct_us"
+            android:icon="@drawable/icons8contact"
+            android:title="Contact Us"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_website"
+                android:icon="@drawable/icons8website"
+                android:title="Website"/>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/icons8share"
+                android:title="Share"/>
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/icons8exit"
+                android:title="Exit"/>
+        </menu>
+    </item>
+
+</menu>
