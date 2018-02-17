@@ -33,7 +33,7 @@ public class RetrivesMessages extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrives_messages);
-
+        getSupportActionBar().setTitle("Notifications");
         recyclerView = (RecyclerView)findViewById(R.id.listMessage);
         linearlayout = new LinearLayoutManager(this.getApplicationContext());
         recyclerView.setHasFixedSize(true);

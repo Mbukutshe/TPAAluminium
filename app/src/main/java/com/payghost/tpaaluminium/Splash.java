@@ -8,6 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
@@ -17,6 +18,7 @@ public class Splash extends FragmentActivity {
     private ImageView logo;
     private TextView appTitle;
     private TextView appSlogan;
+    RelativeLayout splash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,8 @@ public class Splash extends FragmentActivity {
         logo = (ImageView) findViewById(R.id.logo_img);
         appTitle = (TextView) findViewById(R.id.track_txt);
         appSlogan = (TextView) findViewById(R.id.pro_txt);
+        splash = (RelativeLayout)findViewById(R.id.splash);
+        splash.getBackground().setAlpha(220);
 
         if (savedInstanceState == null) {
             flyIn();

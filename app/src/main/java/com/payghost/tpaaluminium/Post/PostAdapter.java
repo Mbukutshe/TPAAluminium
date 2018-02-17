@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.payghost.tpaaluminium.MoreDetails;
 import com.payghost.tpaaluminium.R;
+import com.payghost.tpaaluminium.ZoomIn;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -57,6 +58,14 @@ public class PostAdapter extends RecyclerView.Adapter<PostviewHolder>{
                 intent.putExtra("image",list.get(position).getImage());
                 intent.putExtra("title",list.get(position).getTitle());
                 intent.putExtra("description",list.get(position).getDescription());
+                context.startActivity(intent);
+            }
+        });
+        holder.image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,ZoomIn.class);
+                intent.putExtra("image",list.get(position).getImage());
                 context.startActivity(intent);
             }
         });

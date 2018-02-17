@@ -1,6 +1,7 @@
 package com.payghost.tpaaluminium.Gallery;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import com.payghost.tpaaluminium.R;
+import com.payghost.tpaaluminium.ZoomIn;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -43,6 +45,14 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryviewHolder>{
         upAnim.reset();
         holder.itemView.clearAnimation();
         holder.itemView.setAnimation(upAnim);
+        holder.image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,ZoomIn.class);
+                intent.putExtra("image",list.get(position).getImage());
+                context.startActivity(intent);
+            }
+        });
 
     }
     @Override

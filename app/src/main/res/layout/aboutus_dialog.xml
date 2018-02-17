@@ -20,23 +20,21 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/ic_launcher" />
-
+            android:src="@drawable/logox" />
         <TextView
             android:textColor="@color/colorAccent"
             android:paddingTop="5dp"
-            android:textSize="15dp"
+            android:textSize="@dimen/text_subject_size"
             android:textStyle="bold"
             android:fontFamily="serif"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TPA Aluminium Work"/>
-
         <TextView
             android:layout_gravity="center"
             android:paddingTop="15dp"
-            android:textSize="15dp"
+            android:textSize="@dimen/text_description_size"
             android:fontFamily="serif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

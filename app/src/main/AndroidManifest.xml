@@ -18,7 +18,8 @@
         <activity
             android:name=".Splash"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,28 +29,42 @@
 
         <activity android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ImageUpload" />
-        <activity android:name=".ContactUs" />
-        <activity android:name=".GalleryImages" />
+        <activity android:name=".ImageUpload"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ContactUs"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GalleryImages"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Website"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Files" />
-        <activity android:name=".Message" />
-        <activity android:name=".MoreDetails" />
+        <activity android:name=".Files"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Message"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MoreDetails"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainTabActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RetrivesMessages" />
-        <activity android:name=".AddPost"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RetrivesMessages"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddPost"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ZoomIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Background"/>
     </application>
 
 </manifest>

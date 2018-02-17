@@ -2,14 +2,16 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root"
-    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/aluminium"
     android:gravity="center" >
 
     <RelativeLayout
+        android:id="@+id/splash"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#3a4b6d"
         android:gravity="center" >
 
         <ImageView
@@ -19,7 +21,6 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/pro_txt"
             android:src="@mipmap/ic_launcher" />
-
         <TextView
             android:id="@+id/pro_txt"
             style="@style/TextAppearance.AppCompat.Display1"

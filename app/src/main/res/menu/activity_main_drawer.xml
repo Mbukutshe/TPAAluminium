@@ -19,9 +19,7 @@
             android:id="@+id/nav_contsct_us"
             android:icon="@drawable/icons8contact"
             android:title="Contact Us"/>
-
     </group>
-
     <item android:title="Communicate">
         <menu>
             <item
