@@ -3,23 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/eyadinilogo"
+    android:background="@drawable/aluminium"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ScrollView
         android:id="@+id/scrollViewLayout"
         android:padding="16dp"
-        android:background="#fff"
+        android:background="#EAEAEA"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_gravity="center_vertical"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <EditText
                 android:paddingLeft="10dp"
                 android:fontFamily="sans-serif"
@@ -30,7 +27,6 @@
                 android:id="@+id/message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
             <Button
                 android:id="@+id/btnMessage"
                 android:layout_marginTop="20dp"

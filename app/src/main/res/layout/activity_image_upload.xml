@@ -4,14 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/eyadinilogo"
     android:layout_height="match_parent"
     tools:context=".ImageUpload">
 
     <RelativeLayout
         android:id="@+id/layout_gallery"
         android:padding="16dp"
-        android:background="#fff"
+        android:background="#EAEAEA"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -42,13 +41,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-
-    <ImageView
-        android:visibility="gone"
-        android:id="@+id/gallery_view"
-        android:layout_below="@+id/btn_gallery_upload"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     </RelativeLayout>
 </RelativeLayout>

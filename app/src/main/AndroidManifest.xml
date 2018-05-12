@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.payghost.tpaaluminium">
+    package="com.payghost.tpaluminium">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
 
     <application
         android:allowBackup="true"
@@ -34,7 +37,8 @@
 
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity android:name=".ImageUpload"
             android:screenOrientation="portrait"/>
         <activity android:name=".ContactUs"
@@ -65,6 +69,10 @@
         <activity android:name=".ZoomIn"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Background"/>
+        <activity android:name=".Delete"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Quote"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
